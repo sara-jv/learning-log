@@ -1,0 +1,1 @@
+How to conver XML bean to Java bean
