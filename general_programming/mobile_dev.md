@@ -1,0 +1,1 @@
+TODO: Do some studying on mobile development. 
