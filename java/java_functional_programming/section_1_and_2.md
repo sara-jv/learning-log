@@ -1,5 +1,5 @@
 # Section 1 + 2 - Functional Programming
-
+This course: https://www.udemy.com/share/102zRM3@Dy-6-QDBHPa5NAevU6555uP8ngjeYYaltXvtuZuPtdvlO2tQ7MXUQf474d_RKdJ5Ug==/
 ### Traditional approach
 ```Java
 package programming;
@@ -78,7 +78,7 @@ public class FP01Functional {
 
 ```
 
-### Vocabulary 
+### Takeaways 
 - **Functional programming**: Expresses everything as a function. Functions are pure, should have no side effects and not work on global variables. Works purely on input. 
 - **Streams**: Flows of data. A stream is a (potentially) countably infinite sequence. Streams is that they can be processed as lists, but terms of the sequence are only computed when necessary. Streams are sometimes called lazy lists [(source)](https://sites.ualberta.ca/~jhoover/325/CourseNotes/section/Streams.htm). Simply put, streams are wrappers around a data source, allowing us to operate with that data source and making bulk processing convenient and fast [(source)](https://stackify.com/streams-guide-java-8/).
   - Why do we use streams? [Stream Docs](https://docs.oracle.com/javase/8/docs/api/java/util/stream/package-summary.html)
@@ -91,6 +91,7 @@ public class FP01Functional {
   - Common methods
     - `.stream()`: converts x into a stream, or a seq of elements. ex: `listOfNums.stream()`
     - `.map()`: transforms one object into another by applying the function. ex: `.map(num -> num * num)`, transforms num into its squared value. 
+      - capture the result with a `Collector`. Ex: `nums.stream().map(X -> X.length()).collect(Collectors.toList());`
     - `.filter()`: chooses only element that matches condition in filter to be passed through. ex: `.filter(num --> num % 2 == 0)` all even numbers are passed. 
     - `.forEach()`: Consumes an element. Takes an element and does y. 
 - **Method Reference**: `current_method::method_function` syntax. 

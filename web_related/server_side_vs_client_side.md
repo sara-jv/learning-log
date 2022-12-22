@@ -11,7 +11,6 @@ Pros
 Cons
 full document rebuild
 
-
 ## What is Client Side Rendering?
 Browsers render all data in html file in browser. Server sends skeleton of html file and css properties with js functions. On browser, loads html file and loads css, then js loads. JS can take long to load depending on how much info. 
 

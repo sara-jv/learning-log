@@ -81,9 +81,42 @@ jshell> /exit
 |  Goodbye
 ```
 
+**Creating a custom Comparator**
+We want to order by the length of strs:
+`courses.stream().sorted.sorted(Comparator.comparing(str -> str.length())).forEach(System.out::println)`
+
+**Collecting Strem Elems to List**
+
+```java
+// Square each number in a list and return a list of the new values:
+return nums.stream().map(num -> num*num).collect(Collectors.toList());
+
+// Filter even numbers from a list:
+return nums.stream().filter(x -> x % 2 == 0).collect(Collectors.toList());
+
+// filter courses and create a list of all the lengths:
+return nums.stream().map(X -> X.length()).collect(Collectors.toList());
+
+```
+
+Intermediate operation
+- Performed on a stream and return a stream back
+- ex: `.filter()`, `.map()`
+
+
+Terminal operation
+- Last operation on a stream, returns void or a specific type.
+- ex: `.forEach()`, `.collect()`
+
+### Takeaways
 - `.reduce()`: performs a reduction on the elements of a stream, using the provided identity value and the accumulation function. 
 - `.distinct()`: takes all values that occur only once.
 - `.sorted()`: sorts a stream. 
   - Why use? parallelize more gracefully w/o needing additional synchronization - i.e. Allows us to effectively use the multi core processors in our comps.
 - **What is paralellization?**: Allows use to effectively use the multi core processors.
 - What is jshell?
+- `Comparator.naturalOrder()`:sorted alphabetically / or by ascending values.
+  - Example: `courses.stream().sorted.sorted(Comparator.naturalOrder()).forEach(System.out::println)`
+- Comparator: A comparison function, which imposes a total ordering on some collection of objects. Comparators can be passed to a sort method (such as Collections.sort or Arrays.sort) to allow precise control over the sort order. Comparators can also be used to control the order of certain data structures (such as sorted sets or sorted maps), or to provide an ordering for collections of objects that don't have a natural ordering.
+- Collector: A mutable reduction operation that accumulates input elements into a mutable result container, optionally transforming the accumulated result into a final representation after all input elements have been processed. Reduction operations can be performed either sequentially or in parallel.
+- Working with streams = invoke intermidate operations and finish with terminal operation.
