@@ -1,5 +1,5 @@
 
-My first every bash script, made for iterating over logs, pulling out hour long chuncks and extracting desired information into a new file.
+My first every bash script, made for iterating over logs, pulling out hour long chunks and extracting desired information into a new file.
 
 ```bash
 #!/bin/sh
