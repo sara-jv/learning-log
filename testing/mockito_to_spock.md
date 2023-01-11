@@ -4,7 +4,7 @@
 # What is Spock?
 
 
-## Why Use On Over The Other?
+## Why Use One Over The Other?
 
 
 ## How To Translate Mockito / Junit to Spock

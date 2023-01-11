@@ -10,14 +10,14 @@ i=0
 
 for i in {00..02}
 do
-# get current val and next val
+    # get current val and next val
     h1=$(printf "%02d" $i)
     i2=$((i+1))
     h2=$(printf "%02d" $i2)
 
     echo "fetching service data for hour ${h1}"
 
-# create a directory for each hours worth of logs
+    # create a directory for each hours worth of logs
     mkdir "session-${i}"
 
     cd session-${i}
