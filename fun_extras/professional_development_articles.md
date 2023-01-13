@@ -11,3 +11,5 @@ Humble Advice Seeking (All the time)
 2. Check for your own role in a weird situation. Pick a thing you’ve recently complained about. Ask them — “What could I’ve done differently in that situation?”
 3. Ask for feedback on how to be better. Then, skip the fluffy answer and ask again until you get something real.
 4. Admit a fault or a mistake. Ask for support and advice. Ask them if they noticed you making it or not.
+
+
