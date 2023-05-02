@@ -1,8 +1,8 @@
 
 Sandbox: https://codesandbox.io/s/sleepy-ride-jom0qz?file=/src/App.js:425-437
 
-Using Intersection Observer API
-
+Using Intersection Observer API: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
+> The Intersection Observer API provides a way to asynchronously observe changes in the intersection of a target element with an ancestor element or with a top-level document's viewport.
 ```javascript
   /**
    * An effect that attempts to play a video if it is in the viewport.
@@ -55,7 +55,8 @@ Using Intersection Observer API
   );
 ```
 
-Using react-intersection-observer library
+Using react-intersection-observer library: https://www.npmjs.com/package/react-intersection-observer/v/9.4.3
+Abstracts away some of the logic, so a little bit cleaner / easier to read.
 
 ```javascript
   // get all videos on load
