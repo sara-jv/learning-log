@@ -109,5 +109,57 @@ Abstracts away some of the logic, so a little bit cleaner / easier to read.
   );
 }
 
-
 ```
+
+Above impl has utils to make testing easier: https://github.com/thebuilder/react-intersection-observer#testing
+Jest examples:
+```javascript
+
+  it('should play when scrolled into view', async () => {
+    // mock video.play
+    const playStub = jest
+      .spyOn(window.HTMLMediaElement.prototype, 'play')
+      .mockImplementation(() => {
+      })
+    const wrapper = await (render(
+      <Video
+        dependencyContainer={mockDependencyContainer}
+        desktopVideo={'mockDesktopVideo'}
+        mobileVideo={'mockMobileVideo'}
+        fallbackText={'mockFallbackText'}
+      />
+    ).findByTestId('homepage-video'));
+
+    // observer entry isIntersecting returns true
+    mockAllIsIntersecting(true)
+
+    // expect play to have been called for each video
+    expect(wrapper.querySelectorAll('video')).toHaveLength(2);
+    expect(playStub).toHaveBeenCalledTimes(2);
+    playStub.mockRestore()
+  });
+
+  it('should not play when not scrolled into view', async () => {
+    // mock video.play
+    const playStub = jest
+      .spyOn(window.HTMLMediaElement.prototype, 'play')
+      .mockImplementation(() => {
+      })
+    const wrapper = await (render(
+      <Video
+        dependencyContainer={mockDependencyContainer}
+        desktopVideo={'mockDesktopVideo'}
+        mobileVideo={'mockMobileVideo'}
+        fallbackText={'mockFallbackText'}
+      />
+    ).findByTestId('homepage-video'));
+
+    // observer entry isIntersecting returns false
+    mockAllIsIntersecting(false)
+
+    // expect play to not have been called for each video
+    expect(wrapper.querySelectorAll('video')).toHaveLength(2);
+    expect(playStub).not.toHaveBeenCalled();
+    playStub.mockRestore()
+  });
+  ```
