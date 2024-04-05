@@ -245,5 +245,5 @@ In general, make your org care by tying to revenue. Look at performance data + b
 Single Page Apps are complciated. Look at JavaScript performance & webpack courses.
 
 ## Takeaways
-- Are we plumbing Shopbop with Google Web Vitals to get field data for web vital metrics?
+- Are we plumbing with Google Web Vitals to get field data for web vital metrics?
 - Have we considered serving low-quality img/video first to reduce perceived slowness of loading important imgs/assets
