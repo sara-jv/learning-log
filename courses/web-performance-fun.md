@@ -174,7 +174,7 @@ Do less! Fewer bytes, docs, less overhead, etc.
       - Display depends on device and browser.
       - How to use smallest?
     - Use a srcset! `<img src="pic-1200.jpg" srcset="pic-600jpg 600w, ..." sizes="(max-width:600px) 600px ..." />`.
-    - Optimize img like TinyPNG.
+    - Optimize img w/ TinyPNG.
   - Reduce Request Overhead.
     - Use HTTP2, available on most servers.
       - Pros: reuse connections, faster.
@@ -192,7 +192,7 @@ Do less! Fewer bytes, docs, less overhead, etc.
         - preconnect (do DNS lookup right away): `<link rel="preconnect" href="https://fonts.com" />`.
         - preload (get file right away): `<link rel="preload" href="/icons.css" />`.
 
-### Should we load low-quality images first then higher? <-- Shopbop?
+### Should we load low-quality images first then higher?
 - Sends more bytes over wire, but feels faster because we see something sooner.
 - Shouldn't always do it because requires preprocessing and increases load time.
 - Big images that add value.
