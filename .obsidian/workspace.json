@@ -1,0 +1,178 @@
+{
+  "main": {
+    "id": "bdc41e54f7cdd0dc",
+    "type": "split",
+    "children": [
+      {
+        "id": "e1097b2e95567a3b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4352fabb8a7fc207",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "courses/spring-hibernate-tutorial.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "spring-hibernate-tutorial"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7194e04e94e3bb59",
+    "type": "split",
+    "children": [
+      {
+        "id": "cdf2b290e98979f1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9c48f01ec17cd674",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "08bfe46259aa9908",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "1655ae4b457a73cd",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "2810700a120c729b",
+    "type": "split",
+    "children": [
+      {
+        "id": "96192f182edcaa7f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "54522935c3e734f8",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "courses/spring-hibernate-tutorial.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for spring-hibernate-tutorial"
+            }
+          },
+          {
+            "id": "fed3d70896afe736",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "courses/spring-hibernate-tutorial.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from spring-hibernate-tutorial"
+            }
+          },
+          {
+            "id": "2c10414491d312f9",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "709c89e65df3553e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "courses/spring-hibernate-tutorial.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of spring-hibernate-tutorial"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "4352fabb8a7fc207",
+  "lastOpenFiles": [
+    "2025-01-02.md",
+    "courses/spring-hibernate-tutorial.md",
+    "courses/web-app-performance.md",
+    "courses/web-performance-fun.md",
+    "career/effective_1_on_1.md",
+    "architecture/micro_front_end.md",
+    "api/faceted_search.md",
+    "data_transfer/serialization.md",
+    "data_transfer/data_contracts.md",
+    "examples/scroll_to_play_video.md"
+  ]
+}
