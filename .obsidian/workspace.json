@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "how-to/mysql-setup.md",
+                "file": "how-to/mysql-workbench-setup.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "mysql-setup"
+              "title": "mysql-workbench-setup"
             }
           }
         ]
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "how-to/mysql-setup.md",
+                "file": "how-to/mysql-workbench-setup.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for mysql-setup"
+              "title": "Backlinks for mysql-workbench-setup"
             }
           },
           {
@@ -112,12 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "how-to/mysql-setup.md",
+                "file": "how-to/mysql-workbench-setup.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from mysql-setup"
+              "title": "Outgoing links from mysql-workbench-setup"
             }
           },
           {
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "how-to/mysql-setup.md"
+                "file": "how-to/mysql-workbench-setup.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of mysql-setup"
+              "title": "Outline of mysql-workbench-setup"
             }
           }
         ]
@@ -165,7 +165,7 @@
   "active": "c01d4efbff867f70",
   "lastOpenFiles": [
     "courses/spring-hibernate-tutorial.md",
-    "how-to/mysql-setup.md",
+    "how-to/mysql-workbench-setup.md",
     "setup-mysql-workbench.md",
     "how-to",
     "react/react_mini_course.md",
