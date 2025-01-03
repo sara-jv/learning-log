@@ -117,7 +117,7 @@ public class MycoolappApplication {
   
 }
 ```
-	- `@EnableAutConfiguration` Enables Spring Boot Auto config support
+	- `@EnableAutoConfiguration` Enables Spring Boot Auto config support
 - Sometimes IDE will mark classes as no used because the IDE isn't aware of how the class is used as runtime
 Annotation Autowiring and Qualifiers
 - Construction Injection:
@@ -231,3 +231,68 @@ public Student getStudent(@PathVariable int studentId) {
     return students.get(studentId);  
 }
 ```
+Exception handling steps:
+- Custom error response class
+```java
+public class StudentErrorResponse {  
+    private int status;  
+    private String message;  
+    private long timeStamp;  
+	/**  
+	 * parameterised constructors are defined explicitly in a program the Java
+	 * compiler doesn't insert the implicit default constructor. So, if you wish
+	 * to make the object of the class without passing any initial values `Student 
+	 * president = new Student();` This statement would throw an error`No default
+	 * constructor found; nested exception is java.lang.NoSuchMethodException:`.. 
+	 * */
+    public StudentErrorResponse() {  
+    }  
+    public StudentErrorResponse(int status, String message, long timeStamp) {  
+        this.status = status;  
+        this.message = message;  
+        this.timeStamp = timeStamp;  
+    }  
+}
+```
+- Custom exception class:
+```java
+public class StudentErrorResponse {  
+    private int status;  
+    private String message;  
+    private long timeStamp;  
+  ... getters / setters ...
+}
+```
+- Update REST service to throw:
+```java
+@GetMapping("/students/{studentId}")  
+public Student getStudent(@PathVariable int studentId) throws StudentNotFoundException {  
+    if (studentId >= theStudents.size() || studentId < 0) {  
+        throw new StudentNotFoundException("Student id not found - " + studentId);  
+    }  
+    return theStudents.get(studentId);  
+}
+```
+- Add handler with `@ExceptionHandler`:
+```java
+@ExceptionHandler  
+public ResponseEntity<StudentErrorResponse> handleException(StudentNotFoundException exc) {  
+    StudentErrorResponse error = new StudentErrorResponse();  
+    error.setStatus(HttpStatus.NOT_FOUND.value());  
+    error.setMessage(exc.getMessage());  
+    error.setTimeStamp(System.currentTimeMillis());  
+    return new ResponseEntity<>(error, HttpStatus.NOT_FOUND);  
+}
+```
+- Exception handlers are automatically invoked by Spring's exception handling mechanism when an exception occurs during the processing of a request. 
+Global Exception Handling
+- `@ControllerAdvice` = like interceptor/filter
+	- REST client --> Controller Advice (one location to handle all requests*) --> Rest Service
+- Pre-process requests to controllers / pos-process responses to handle exceptions
+Designing
+- Review API Reqs
+	- ex: API first employee directory with full CRUD support
+- Main resource / entity = most prominent noun
+	- ex: employees <-- convention is plural
+- Use HTTP methods to assign action on a resource
+	- don't include actions in the endpoint (employeesList/updateEmployee), make use of http method
