@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "courses/spring-hibernate-tutorial.md",
+                "file": "how-to/mysql-setup.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "spring-hibernate-tutorial"
+              "title": "mysql-setup"
             }
           }
         ]
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "courses/spring-hibernate-tutorial.md",
+                "file": "how-to/mysql-setup.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for spring-hibernate-tutorial"
+              "title": "Backlinks for mysql-setup"
             }
           },
           {
@@ -112,12 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "courses/spring-hibernate-tutorial.md",
+                "file": "how-to/mysql-setup.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from spring-hibernate-tutorial"
+              "title": "Outgoing links from mysql-setup"
             }
           },
           {
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "courses/spring-hibernate-tutorial.md"
+                "file": "how-to/mysql-setup.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of spring-hibernate-tutorial"
+              "title": "Outline of mysql-setup"
             }
           }
         ]
@@ -162,11 +162,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9c48f01ec17cd674",
+  "active": "c01d4efbff867f70",
   "lastOpenFiles": [
+    "courses/spring-hibernate-tutorial.md",
     "how-to/mysql-setup.md",
     "setup-mysql-workbench.md",
-    "courses/spring-hibernate-tutorial.md",
     "how-to",
     "react/react_mini_course.md",
     "react/react_context.md",
